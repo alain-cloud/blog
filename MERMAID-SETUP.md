@@ -20,7 +20,7 @@ Copy the Minima post layout into `_layouts/post.html`, then add this before the 
 
 ```liquid
 {% raw %}
-{% include mermaid.html %}
+{{ site.baseurl }}/_includes/mermaid.html
 {% endraw %}
 ```
 
