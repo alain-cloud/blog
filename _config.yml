@@ -21,6 +21,7 @@ minima:
   social_links:
     - { platform: github, user_url: "https://github.com/alain-cloud" }
 exclude:
+exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
