@@ -1,0 +1,74 @@
+---
+---
+@import "minima";
+
+:root {
+  --ink: #0f172a;
+  --text: #334155;
+  --muted: #64748b;
+  --line: #e2e8f0;
+  --surface: #f8fafc;
+  --blue: #0078d4;
+  --blue-dark: #005ea6;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: #fff;
+  line-height: 1.75;
+}
+.wrapper { max-width: 1120px; }
+.site-header { background:#fff; border-top:4px solid var(--blue); border-bottom:1px solid var(--line); }
+.site-title { color:var(--ink) !important; font-weight:750; letter-spacing:-.02em; }
+.site-nav .page-link { color:var(--text); font-weight:600; }
+.site-nav .page-link:hover { color:var(--blue); text-decoration:none; }
+.page-content { padding:56px 0 72px; }
+a { color:var(--blue); }
+a:hover { color:var(--blue-dark); text-decoration:none; }
+
+.hero { background:linear-gradient(135deg,#eef7ff 0%,#f8fafc 58%,#fff 100%); border:1px solid #dbeafe; border-radius:24px; padding:64px; margin-bottom:28px; }
+.eyebrow { color:var(--blue); font-weight:750; font-size:.78rem; letter-spacing:.14em; margin-bottom:12px; }
+.hero h1 { color:var(--ink); font-size:clamp(2.45rem,6vw,4.8rem); line-height:1.02; letter-spacing:-.055em; max-width:850px; margin:0 0 22px; }
+.hero-text { font-size:1.2rem; color:#475569; max-width:700px; margin-bottom:30px; }
+.hero-actions { display:flex; gap:12px; flex-wrap:wrap; }
+.button { display:inline-block; padding:12px 20px; border-radius:10px; font-weight:700; }
+.button.primary { background:var(--blue); color:#fff; }
+.button.primary:hover { background:var(--blue-dark); }
+.button.secondary { background:#fff; color:var(--ink); border:1px solid var(--line); }
+.topic-strip { display:flex; flex-wrap:wrap; gap:10px; margin:22px 0 50px; }
+.topic-strip span { background:var(--surface); border:1px solid var(--line); border-radius:999px; padding:7px 13px; color:#475569; font-size:.9rem; font-weight:650; }
+.section-title { color:var(--ink); font-size:1.9rem; letter-spacing:-.03em; }
+
+.post-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px; }
+.post-list > li, .article-card { list-style:none; background:#fff; border:1px solid var(--line); border-radius:16px; padding:26px; margin:0; box-shadow:0 8px 26px rgba(15,23,42,.04); transition:.2s ease; }
+.post-list > li:hover, .article-card:hover { transform:translateY(-3px); border-color:#93c5fd; box-shadow:0 14px 32px rgba(15,23,42,.08); }
+.post-link, .article-card h2 a { color:var(--ink); font-weight:750; line-height:1.25; letter-spacing:-.025em; }
+.article-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px; }
+.card-category { color:var(--blue); font-size:.78rem; font-weight:750; letter-spacing:.08em; text-transform:uppercase; }
+.card-meta { color:var(--muted); font-size:.88rem; margin:18px 0 8px; }
+.read-more { font-weight:700; }
+
+.post-title, .page-heading, .post-content h1, .post-content h2, .post-content h3 { color:var(--ink); }
+.post-title { font-size:clamp(2.2rem,5vw,4rem); line-height:1.08; letter-spacing:-.045em; }
+.post-meta { color:var(--muted); }
+.post-content { font-size:1.06rem; }
+.post-content h2 { margin-top:2.7rem; padding-top:.4rem; font-weight:750; letter-spacing:-.025em; }
+blockquote { background:#eff6ff; border-left:4px solid var(--blue); color:#334155; padding:18px 22px; margin:30px 0; border-radius:0 10px 10px 0; }
+table { width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border:1px solid var(--line); border-radius:12px; }
+th { background:var(--ink); color:#fff; }
+th, td { padding:12px 15px; border-bottom:1px solid var(--line); }
+tr:last-child td { border-bottom:0; }
+
+.site-footer { background:var(--ink); color:#cbd5e1; border-top:0; padding:46px 0; }
+.site-footer a { color:#93c5fd; }
+.site-footer .footer-heading { color:#fff; font-weight:750; }
+.not-found { text-align:center; padding:70px 20px; }
+.not-found h1 { color:var(--ink); font-size:3rem; }
+
+@media (max-width:760px) {
+  .hero { padding:38px 24px; border-radius:18px; }
+  .page-content { padding-top:32px; }
+  .post-list, .article-grid { grid-template-columns:1fr; }
+  .hero h1 { font-size:2.7rem; }
+}
