@@ -1,26 +1,31 @@
-title: "Alaeddine Najjar | Cloud & FinOps"
-description: "Practical insights on Azure, FinOps, cloud architecture and governance."
+title: "Alaeddine Najjar"
+description: "Cloud Architecture, Azure, FinOps, AI & Technology"
 url: "https://blog.alaeddinenajjar.com"
 baseurl: ""
 lang: en-GB
 timezone: Europe/Paris
+
 author:
-  name: Alaeddine Najjar
-  bio: "Cloud Architect focused on Azure, FinOps, resilience and cloud governance."
+  name: "Alaeddine Najjar"
+  bio: "Cloud Architect sharing practical insights on Azure, FinOps, AI, security and resilient cloud architectures."
+
 theme: minima
 permalink: /:categories/:year/:month/:day/:title/
 show_excerpts: true
+
 header_pages:
-  - about.md
   - archive.md
+  - about.md
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
 minima:
-  skin: auto
   social_links:
-    - { platform: github, user_url: "https://github.com/alain-cloud" }
-exclude:
+    - platform: github
+      user_url: "https://github.com/alain-cloud"
+
 exclude:
   - README.md
   - Gemfile
