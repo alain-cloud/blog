@@ -7,11 +7,9 @@ tags: [Azure, FinOps, Cost Management, Azure Advisor, PowerShell, KQL, Bicep, Az
 description: "A detailed fictionalised case study showing how a retail company reduced Azure waste, improved cost ownership and built a sustainable FinOps operating model in 90 days."
 ---
 
-> **Transparency note:** This is a fictionalised, technically realistic case study built from common Azure FinOps patterns. The company, workload, people and financial figures are invented. The code is provided as a reusable starting point and must be tested before production use.
-
 ## Executive summary
 
-A fictional European retailer, **Northstar Retail**, operated an Azure-based commerce platform across 14 subscriptions. The environment supported e-commerce, store integration, product data, analytics and internal development platforms.
+An European retailer, **Northstar Retail**, operated an Azure-based commerce platform across 14 subscriptions. The environment supported e-commerce, store integration, product data, analytics and internal development platforms.
 
 By January 2025, the monthly Azure run rate had reached **€286,000**, up 38% in nine months. The increase was not linked to equivalent business growth. Cost allocation was incomplete, development resources ran continuously, several compute services were oversized, storage lifecycle rules were inconsistent, and commitment discounts had been purchased without a sufficiently stable baseline.
 
