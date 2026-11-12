@@ -1,14 +1,8 @@
-# Alaeddine Najjar Blog V2
+# Azure 2024 deep architecture series
 
-Ready for GitHub Pages at `blog.alaeddinenajjar.com`.
+This package contains 26 Jekyll-compatible Markdown articles dated across 2024. Every article includes a Mermaid architecture diagram, implementation guidance, troubleshooting, workarounds, a 2024 attention section and a production validation checklist.
 
-## Upload
+Upload the Markdown files from `_posts/` into the `_posts/` folder of your blog.
 
-Upload the contents of this folder to the root of `alain-cloud/blog` while preserving folders such as `.github`, `_posts` and `assets`.
-
-## Important
-
-- Delete the old root-level `jekyll.yml`, `style.scss`, `download` and root-level article if they still exist.
-- Keep only `.github/workflows/jekyll.yml`.
-- Keep the article inside `_posts`.
-- Validate customer-derived figures before publication.
+## Mermaid requirement
+GitHub renders Mermaid in repository views, but the Jekyll Minima site might not render Mermaid without adding Mermaid JavaScript to the layout. See `MERMAID-SETUP.md`.
