@@ -1,0 +1,57 @@
+---
+layout: default
+---
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+
+    {% if page.categories %}
+      <div class="post-categories">
+        {% for category in page.categories %}
+          <span class="post-category">{{ category }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    <h1 class="post-title p-name" itemprop="name headline">
+      {{ page.title | escape }}
+    </h1>
+
+    <p class="post-meta">
+      <time
+        class="dt-published"
+        datetime="{{ page.date | date_to_xmlschema }}"
+        itemprop="datePublished"
+      >
+        {{ page.date | date: "%d %B %Y" }}
+      </time>
+
+      {% if page.author %}
+        · <span itemprop="author">{{ page.author }}</span>
+      {% elsif site.author.name %}
+        · <span itemprop="author">{{ site.author.name }}</span>
+      {% endif %}
+    </p>
+
+    {% if page.description %}
+      <p class="post-description">
+        {{ page.description }}
+      </p>
+    {% endif %}
+
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  <p class="back-to-articles">
+    <a href="{{ '/articles/' | relative_url }}">
+      ← Back to all articles
+    </a>
+  </p>
+
+</article>
+
+{% include mermaid.html %}
