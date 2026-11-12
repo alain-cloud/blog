@@ -19,7 +19,9 @@ Create `_includes/mermaid.html` with:
 Copy the Minima post layout into `_layouts/post.html`, then add this before the closing body or at the end of the layout:
 
 ```liquid
+{% raw %}
 {% include mermaid.html %}
+{% endraw %}
 ```
 
 Security note: pin a reviewed Mermaid version or host the asset yourself if your content security policy does not allow a public CDN. Test rendering in a branch before merging.
