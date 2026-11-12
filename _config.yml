@@ -28,6 +28,8 @@ minima:
 
 exclude:
   - README.md
+  - MERMAID-SETUP.md
+  - ARTICLE-INVENTORY.md
   - Gemfile
   - Gemfile.lock
   - vendor
