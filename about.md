@@ -4,8 +4,6 @@ title: About
 permalink: /about/
 ---
 
-# About
-
 I am **Alaeddine Najjar**, a Cloud Architect focused on helping organisations design, optimise and govern modern cloud environments.
 
 ## Areas of focus

@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<section aria-labelledby="latest-heading">
+  <div class="section-heading">
+    <h2 id="latest-heading">Latest articles</h2>
+    <a href="{{ '/articles/' | relative_url }}">View all articles&nbsp; →</a>
+  </div>
+  <ul class="post-list">
+    {% for post in site.posts limit:6 %}
+      <li>
+        {% if post.categories.size > 0 %}
+          <div class="card-category">{% include topic-label.html name=post.categories.first %}</div>
+        {% endif %}
+        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        <p class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %B %Y" }}</time></p>
+        <p class="post-excerpt">{{ post.description | default: post.excerpt | strip_html | normalize_whitespace | truncate: 150 }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

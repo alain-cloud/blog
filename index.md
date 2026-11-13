@@ -14,7 +14,10 @@ title: Home
 </div>
 
 <div class="topic-strip">
-  <span>Azure</span><span>FinOps</span><span>AI</span><span>Security</span><span>Resilience</span><span>Automation</span>
+  <a href="{{ '/articles/#finops' | relative_url }}">FinOps</a>
+  <a href="{{ '/articles/#security' | relative_url }}">Security</a>
+  <a href="{{ '/articles/#architecture' | relative_url }}">Architecture</a>
+  <a href="{{ '/articles/#networking' | relative_url }}">Networking</a>
+  <a href="{{ '/articles/#reliability' | relative_url }}">Reliability</a>
+  <a href="{{ '/articles/' | relative_url }}">Browse all topics&nbsp; →</a>
 </div>
-
-<h2 class="section-title">Latest articles</h2>

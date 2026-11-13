@@ -8,9 +8,7 @@ layout: default
 
     {% if page.categories %}
       <div class="post-categories">
-        {% for category in page.categories %}
-          <span class="post-category">{{ category }}</span>
-        {% endfor %}
+        <span class="post-category">{% include topic-label.html name=page.categories.first %}</span>
       </div>
     {% endif %}
 
